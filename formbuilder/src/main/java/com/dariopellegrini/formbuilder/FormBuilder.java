@@ -420,8 +420,8 @@ public class FormBuilder {
                 selectedElements.clear(); //We only want one input
                 selectedElements.add(selectedFormElement.getOptions().get(selectedPosition));
                 selectedFormElement.setOptionsSelected(selectedElements);
-                selectedEditText.setText("manu");
-                //selectedEditText.setText(selectedFormElement.getOptionsSelected().toString());
+                selectedEditText.setText("");
+                selectedEditText.setText(selectedFormElement.getOptionsSelected().toString());
             }
         });
 
