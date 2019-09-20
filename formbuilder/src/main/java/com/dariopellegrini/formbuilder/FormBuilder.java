@@ -391,7 +391,8 @@ public class FormBuilder {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 selectedFormElement.setOptionsSelected(selectedElements);
-                selectedEditText.setText(selectedFormElement.getOptionsSelected().toString().replace("[", "").replace("]", ""));
+                selectedEditText.setText("");
+                selectedEditText.setText(selectedFormElement.getOptionsSelected().toString());
             }
         });
 
