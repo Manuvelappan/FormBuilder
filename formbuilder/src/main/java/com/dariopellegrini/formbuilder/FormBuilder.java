@@ -421,7 +421,7 @@ public class FormBuilder {
                 selectedElements.add(selectedFormElement.getOptions().get(selectedPosition));
                 selectedFormElement.setOptionsSelected(selectedElements);
                 selectedEditText.setText("");
-                selectedEditText.setText(selectedFormElement.getOptionsSelected().toString().replace('[','"').replace(']','"'));
+                selectedEditText.setText(selectedFormElement.getOptionsSelected().toString().replace('[',' ').replace(']',' '));
             }
         });
 
